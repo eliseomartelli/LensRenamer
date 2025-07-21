@@ -35,7 +35,7 @@ jobs:
         run: |
           TAG_VERSION=${GITHUB_REF#refs/tags/}
           MARKETING_VERSION=$(echo $TAG_VERSION | cut -d. -f1-3)
-          BUILD_NUMBER=$(echo $TAG_VERSION | cut -d. -f3)
+          BUILD_NUMBER=$(echo $TAG_VERSION | cut -d. -f1-3)
           xcrun agvtool new-marketing-version "$MARKETING_VERSION"
           xcrun agvtool new-version -all "$BUILD_NUMBER"
 
