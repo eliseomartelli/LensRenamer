@@ -33,35 +33,45 @@ class LensDetailViewModel: ObservableObject {
 
     /// Handles files dropped onto the drop area.
     func handleDrop(providers: [NSItemProvider]) -> Bool {
+        var urls: [URL] = []
+        let group = DispatchGroup()
+
         for provider in providers {
+            group.enter()
             provider.loadItem(forTypeIdentifier: UTType.fileURL.identifier, options: nil) {
                 item, error in
+                defer { group.leave() }
+
                 if let data = item as? Data,
                    let url = URL(dataRepresentation: data, relativeTo: nil)
                 {
-                    DispatchQueue.main.async {
-                        self.processFiles(urls: [url])
-                    }
+                    urls.append(url)
                 } else if let error = error {
                     print("Error loading dropped file URL: \(error)")
                 }
             }
         }
+
+        group.notify(queue: .main) {
+            self.processFiles(urls: urls)
+        }
+
         return true
     }
 
     /// Processes the selected or dropped files.
     func processFiles(urls: [URL]) {
         processing = true
-        selectedFiles.append(contentsOf: urls)
-        for url in urls {
-            writeExif(for: url)
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.writeExif(for: urls)
+            DispatchQueue.main.async {
+                self.processing = false
+            }
         }
-        processing = false
     }
 
     /// Writes EXIF data to a file using exiftool.
-    private func writeExif(for file: URL) {
+    private func writeExif(for files: [URL]) {
         guard let exiftoolURL = Bundle.main.url(forResource: "exiftool", withExtension: nil) else {
             print("Could not locate exiftool in bundle")
             return
@@ -71,12 +81,12 @@ class LensDetailViewModel: ObservableObject {
         process.executableURL = URL(fileURLWithPath: "/usr/bin/perl")
         process.arguments = [
             exiftoolURL.path,
+            "-overwrite_original",
             "-LensMake=\(lens.make)",
             "-LensModel=\(lens.make) \(lens.model)",
             "-FocalLength=\(lens.focalLength)",
             "-LensSerialNumber=\(lens.serialNumber)",
-            file.path
-        ]
+        ] + files.map { $0.path }
 
         if let libURL = Bundle.main.url(forResource: "lib", withExtension: nil) {
             process.environment = [
@@ -99,7 +109,6 @@ class LensDetailViewModel: ObservableObject {
             if let output = String(data: data, encoding: .utf8) {
                 print("ExifTool output:\n\(output)")
             }
-
         } catch {
             print("Failed to run exiftool: \(error)")
         }
