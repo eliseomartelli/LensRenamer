@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55A5229B2E2D489000FA9619 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 55A5229A2E2D489000FA9619 /* lib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		557277912E2CCC6A00871899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5572777A2E2CCC6800871899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557277812E2CCC6800871899;
+			remoteInfo = LensRenamer;
+		};
+		5572779B2E2CCC6A00871899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5572777A2E2CCC6800871899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557277812E2CCC6800871899;
+			remoteInfo = LensRenamer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		557277822E2CCC6800871899 /* LensRenamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LensRenamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		557277902E2CCC6A00871899 /* LensRenamerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LensRenamerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5572779A2E2CCC6A00871899 /* LensRenamerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LensRenamerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A5229A2E2D489000FA9619 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = Resources/lib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		55A520A92E2D47F700FA9619 /* Exceptions for "Resources" folder in "LensRenamer" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				lib/File/RandomAccess.pm,
+				lib/File/RandomAccess.pod,
+				lib/Image/ExifTool.pm,
+				lib/Image/ExifTool.pod,
+				lib/Image/ExifTool/.new.giHWSW,
+				lib/Image/ExifTool/7Z.pm,
+				lib/Image/ExifTool/AAC.pm,
+				lib/Image/ExifTool/AES.pm,
+				lib/Image/ExifTool/AFCP.pm,
+				lib/Image/ExifTool/AIFF.pm,
+				lib/Image/ExifTool/APE.pm,
+				lib/Image/ExifTool/APP12.pm,
+				lib/Image/ExifTool/Apple.pm,
+				lib/Image/ExifTool/ASF.pm,
+				lib/Image/ExifTool/Audible.pm,
+				lib/Image/ExifTool/BigTIFF.pm,
+				lib/Image/ExifTool/BMP.pm,
+				lib/Image/ExifTool/BPG.pm,
+				lib/Image/ExifTool/BuildTagLookup.pm,
+				lib/Image/ExifTool/BZZ.pm,
+				lib/Image/ExifTool/Canon.pm,
+				lib/Image/ExifTool/CanonCustom.pm,
+				lib/Image/ExifTool/CanonRaw.pm,
+				lib/Image/ExifTool/CanonVRD.pm,
+				lib/Image/ExifTool/CaptureOne.pm,
+				lib/Image/ExifTool/Casio.pm,
+				lib/Image/ExifTool/CBOR.pm,
+				lib/Image/ExifTool/Charset.pm,
+				lib/Image/ExifTool/Charset/Arabic.pm,
+				lib/Image/ExifTool/Charset/Baltic.pm,
+				lib/Image/ExifTool/Charset/Cyrillic.pm,
+				lib/Image/ExifTool/Charset/DOSCyrillic.pm,
+				lib/Image/ExifTool/Charset/DOSLatin1.pm,
+				lib/Image/ExifTool/Charset/DOSLatinUS.pm,
+				lib/Image/ExifTool/Charset/Greek.pm,
+				lib/Image/ExifTool/Charset/Hebrew.pm,
+				lib/Image/ExifTool/Charset/JIS.pm,
+				lib/Image/ExifTool/Charset/Latin.pm,
+				lib/Image/ExifTool/Charset/Latin2.pm,
+				lib/Image/ExifTool/Charset/MacArabic.pm,
+				lib/Image/ExifTool/Charset/MacChineseCN.pm,
+				lib/Image/ExifTool/Charset/MacChineseTW.pm,
+				lib/Image/ExifTool/Charset/MacCroatian.pm,
+				lib/Image/ExifTool/Charset/MacCyrillic.pm,
+				lib/Image/ExifTool/Charset/MacGreek.pm,
+				lib/Image/ExifTool/Charset/MacHebrew.pm,
+				lib/Image/ExifTool/Charset/MacIceland.pm,
+				lib/Image/ExifTool/Charset/MacJapanese.pm,
+				lib/Image/ExifTool/Charset/MacKorean.pm,
+				lib/Image/ExifTool/Charset/MacLatin2.pm,
+				lib/Image/ExifTool/Charset/MacRoman.pm,
+				lib/Image/ExifTool/Charset/MacRomanian.pm,
+				lib/Image/ExifTool/Charset/MacRSymbol.pm,
+				lib/Image/ExifTool/Charset/MacThai.pm,
+				lib/Image/ExifTool/Charset/MacTurkish.pm,
+				lib/Image/ExifTool/Charset/PDFDoc.pm,
+				lib/Image/ExifTool/Charset/ShiftJIS.pm,
+				lib/Image/ExifTool/Charset/Symbol.pm,
+				lib/Image/ExifTool/Charset/Thai.pm,
+				lib/Image/ExifTool/Charset/Turkish.pm,
+				lib/Image/ExifTool/Charset/Vietnam.pm,
+				lib/Image/ExifTool/DarwinCore.pm,
+				lib/Image/ExifTool/DICOM.pm,
+				lib/Image/ExifTool/DJI.pm,
+				lib/Image/ExifTool/DjVu.pm,
+				lib/Image/ExifTool/DNG.pm,
+				lib/Image/ExifTool/DPX.pm,
+				lib/Image/ExifTool/DV.pm,
+				lib/Image/ExifTool/EXE.pm,
+				lib/Image/ExifTool/Exif.pm,
+				lib/Image/ExifTool/FITS.pm,
+				lib/Image/ExifTool/Fixup.pm,
+				lib/Image/ExifTool/FLAC.pm,
+				lib/Image/ExifTool/Flash.pm,
+				lib/Image/ExifTool/FlashPix.pm,
+				lib/Image/ExifTool/FLIF.pm,
+				lib/Image/ExifTool/FLIR.pm,
+				lib/Image/ExifTool/Font.pm,
+				lib/Image/ExifTool/FotoStation.pm,
+				lib/Image/ExifTool/FujiFilm.pm,
+				lib/Image/ExifTool/GE.pm,
+				lib/Image/ExifTool/Geolocation.dat,
+				lib/Image/ExifTool/Geolocation.pm,
+				lib/Image/ExifTool/Geotag.pm,
+				lib/Image/ExifTool/GeoTiff.pm,
+				lib/Image/ExifTool/GIF.pm,
+				lib/Image/ExifTool/GIMP.pm,
+				lib/Image/ExifTool/GM.pm,
+				lib/Image/ExifTool/GoPro.pm,
+				lib/Image/ExifTool/GPS.pm,
+				lib/Image/ExifTool/H264.pm,
+				lib/Image/ExifTool/HP.pm,
+				lib/Image/ExifTool/HTML.pm,
+				lib/Image/ExifTool/HtmlDump.pm,
+				lib/Image/ExifTool/ICC_Profile.pm,
+				lib/Image/ExifTool/ICO.pm,
+				lib/Image/ExifTool/ID3.pm,
+				lib/Image/ExifTool/Import.pm,
+				lib/Image/ExifTool/InDesign.pm,
+				lib/Image/ExifTool/InfiRay.pm,
+				lib/Image/ExifTool/IPTC.pm,
+				lib/Image/ExifTool/ISO.pm,
+				lib/Image/ExifTool/ITC.pm,
+				lib/Image/ExifTool/iWork.pm,
+				lib/Image/ExifTool/JPEG.pm,
+				lib/Image/ExifTool/Jpeg2000.pm,
+				lib/Image/ExifTool/JPEGDigest.pm,
+				lib/Image/ExifTool/JSON.pm,
+				lib/Image/ExifTool/JVC.pm,
+				lib/Image/ExifTool/Kodak.pm,
+				lib/Image/ExifTool/KyoceraRaw.pm,
+				lib/Image/ExifTool/Lang/cs.pm,
+				lib/Image/ExifTool/Lang/de.pm,
+				lib/Image/ExifTool/Lang/en_ca.pm,
+				lib/Image/ExifTool/Lang/en_gb.pm,
+				lib/Image/ExifTool/Lang/es.pm,
+				lib/Image/ExifTool/Lang/fi.pm,
+				lib/Image/ExifTool/Lang/fr.pm,
+				lib/Image/ExifTool/Lang/it.pm,
+				lib/Image/ExifTool/Lang/ja.pm,
+				lib/Image/ExifTool/Lang/ko.pm,
+				lib/Image/ExifTool/Lang/nl.pm,
+				lib/Image/ExifTool/Lang/pl.pm,
+				lib/Image/ExifTool/Lang/ru.pm,
+				lib/Image/ExifTool/Lang/sk.pm,
+				lib/Image/ExifTool/Lang/sv.pm,
+				lib/Image/ExifTool/Lang/tr.pm,
+				lib/Image/ExifTool/Lang/zh_cn.pm,
+				lib/Image/ExifTool/Lang/zh_tw.pm,
+				lib/Image/ExifTool/Leaf.pm,
+				lib/Image/ExifTool/LIF.pm,
+				lib/Image/ExifTool/LigoGPS.pm,
+				lib/Image/ExifTool/LNK.pm,
+				lib/Image/ExifTool/Lytro.pm,
+				lib/Image/ExifTool/M2TS.pm,
+				lib/Image/ExifTool/MacOS.pm,
+				lib/Image/ExifTool/MakerNotes.pm,
+				lib/Image/ExifTool/Matroska.pm,
+				lib/Image/ExifTool/Microsoft.pm,
+				lib/Image/ExifTool/MIE.pm,
+				lib/Image/ExifTool/MIEUnits.pod,
+				lib/Image/ExifTool/MIFF.pm,
+				lib/Image/ExifTool/Minolta.pm,
+				lib/Image/ExifTool/MinoltaRaw.pm,
+				lib/Image/ExifTool/MISB.pm,
+				lib/Image/ExifTool/MNG.pm,
+				lib/Image/ExifTool/MOI.pm,
+				lib/Image/ExifTool/Motorola.pm,
+				lib/Image/ExifTool/MPC.pm,
+				lib/Image/ExifTool/MPEG.pm,
+				lib/Image/ExifTool/MPF.pm,
+				lib/Image/ExifTool/MRC.pm,
+				lib/Image/ExifTool/MWG.pm,
+				lib/Image/ExifTool/MXF.pm,
+				lib/Image/ExifTool/Nikon.pm,
+				lib/Image/ExifTool/NikonCapture.pm,
+				lib/Image/ExifTool/NikonCustom.pm,
+				lib/Image/ExifTool/NikonSettings.pm,
+				lib/Image/ExifTool/Nintendo.pm,
+				lib/Image/ExifTool/Ogg.pm,
+				lib/Image/ExifTool/Olympus.pm,
+				lib/Image/ExifTool/OOXML.pm,
+				lib/Image/ExifTool/OpenEXR.pm,
+				lib/Image/ExifTool/Opus.pm,
+				lib/Image/ExifTool/Other.pm,
+				lib/Image/ExifTool/Palm.pm,
+				lib/Image/ExifTool/Panasonic.pm,
+				lib/Image/ExifTool/PanasonicRaw.pm,
+				lib/Image/ExifTool/Parrot.pm,
+				lib/Image/ExifTool/PCAP.pm,
+				lib/Image/ExifTool/PCX.pm,
+				lib/Image/ExifTool/PDF.pm,
+				lib/Image/ExifTool/Pentax.pm,
+				lib/Image/ExifTool/PGF.pm,
+				lib/Image/ExifTool/PhaseOne.pm,
+				lib/Image/ExifTool/PhotoCD.pm,
+				lib/Image/ExifTool/PhotoMechanic.pm,
+				lib/Image/ExifTool/Photoshop.pm,
+				lib/Image/ExifTool/PICT.pm,
+				lib/Image/ExifTool/PLIST.pm,
+				lib/Image/ExifTool/Plot.pm,
+				lib/Image/ExifTool/PLUS.pm,
+				lib/Image/ExifTool/PNG.pm,
+				lib/Image/ExifTool/PostScript.pm,
+				lib/Image/ExifTool/PPM.pm,
+				lib/Image/ExifTool/PrintIM.pm,
+				lib/Image/ExifTool/Protobuf.pm,
+				lib/Image/ExifTool/PSP.pm,
+				lib/Image/ExifTool/Qualcomm.pm,
+				lib/Image/ExifTool/QuickTime.pm,
+				lib/Image/ExifTool/QuickTimeStream.pl,
+				lib/Image/ExifTool/Radiance.pm,
+				lib/Image/ExifTool/Rawzor.pm,
+				lib/Image/ExifTool/README,
+				lib/Image/ExifTool/Real.pm,
+				lib/Image/ExifTool/Reconyx.pm,
+				lib/Image/ExifTool/Red.pm,
+				lib/Image/ExifTool/Ricoh.pm,
+				lib/Image/ExifTool/RIFF.pm,
+				lib/Image/ExifTool/RSRC.pm,
+				lib/Image/ExifTool/RTF.pm,
+				lib/Image/ExifTool/Samsung.pm,
+				lib/Image/ExifTool/Sanyo.pm,
+				lib/Image/ExifTool/Scalado.pm,
+				lib/Image/ExifTool/Shift.pl,
+				lib/Image/ExifTool/Shortcuts.pm,
+				lib/Image/ExifTool/Sigma.pm,
+				lib/Image/ExifTool/SigmaRaw.pm,
+				lib/Image/ExifTool/Sony.pm,
+				lib/Image/ExifTool/SonyIDC.pm,
+				lib/Image/ExifTool/Stim.pm,
+				lib/Image/ExifTool/TagInfoXML.pm,
+				lib/Image/ExifTool/TagLookup.pm,
+				lib/Image/ExifTool/TagNames.pod,
+				lib/Image/ExifTool/Text.pm,
+				lib/Image/ExifTool/Theora.pm,
+				lib/Image/ExifTool/Torrent.pm,
+				lib/Image/ExifTool/Trailer.pm,
+				lib/Image/ExifTool/Unknown.pm,
+				lib/Image/ExifTool/Validate.pm,
+				lib/Image/ExifTool/VCard.pm,
+				lib/Image/ExifTool/Vorbis.pm,
+				lib/Image/ExifTool/WPG.pm,
+				lib/Image/ExifTool/WriteCanonRaw.pl,
+				lib/Image/ExifTool/WriteExif.pl,
+				lib/Image/ExifTool/WriteIPTC.pl,
+				lib/Image/ExifTool/WritePDF.pl,
+				lib/Image/ExifTool/WritePhotoshop.pl,
+				lib/Image/ExifTool/WritePNG.pl,
+				lib/Image/ExifTool/WritePostScript.pl,
+				lib/Image/ExifTool/WriteQuickTime.pl,
+				lib/Image/ExifTool/Writer.pl,
+				lib/Image/ExifTool/WriteRIFF.pl,
+				lib/Image/ExifTool/WriteXMP.pl,
+				lib/Image/ExifTool/WTV.pm,
+				lib/Image/ExifTool/XISF.pm,
+				lib/Image/ExifTool/XMP.pm,
+				lib/Image/ExifTool/XMP2.pl,
+				lib/Image/ExifTool/XMPStruct.pl,
+				lib/Image/ExifTool/ZIP.pm,
+				lib/Image/ExifTool/ZISRAW.pm,
+			);
+			target = 557277812E2CCC6800871899 /* LensRenamer */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		557277842E2CCC6800871899 /* LensRenamer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LensRenamer;
+			sourceTree = "<group>";
+		};
+		557277932E2CCC6A00871899 /* LensRenamerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LensRenamerTests;
+			sourceTree = "<group>";
+		};
+		5572779D2E2CCC6A00871899 /* LensRenamerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LensRenamerUITests;
+			sourceTree = "<group>";
+		};
+		55727C892E2CDC9A00871899 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				55A520A92E2D47F700FA9619 /* Exceptions for "Resources" folder in "LensRenamer" target */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5572777F2E2CCC6800871899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5572778D2E2CCC6A00871899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557277972E2CCC6A00871899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		557277792E2CCC6800871899 = {
+			isa = PBXGroup;
+			children = (
+				55A5229A2E2D489000FA9619 /* lib */,
+				55727C892E2CDC9A00871899 /* Resources */,
+				557277842E2CCC6800871899 /* LensRenamer */,
+				557277932E2CCC6A00871899 /* LensRenamerTests */,
+				5572779D2E2CCC6A00871899 /* LensRenamerUITests */,
+				557277832E2CCC6800871899 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		557277832E2CCC6800871899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				557277822E2CCC6800871899 /* LensRenamer.app */,
+				557277902E2CCC6A00871899 /* LensRenamerTests.xctest */,
+				5572779A2E2CCC6A00871899 /* LensRenamerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		557277812E2CCC6800871899 /* LensRenamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557277A42E2CCC6A00871899 /* Build configuration list for PBXNativeTarget "LensRenamer" */;
+			buildPhases = (
+				5572777E2E2CCC6800871899 /* Sources */,
+				5572777F2E2CCC6800871899 /* Frameworks */,
+				55A520A82E2D47F700FA9619 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				557277842E2CCC6800871899 /* LensRenamer */,
+				55727C892E2CDC9A00871899 /* Resources */,
+			);
+			name = LensRenamer;
+			packageProductDependencies = (
+			);
+			productName = LensRenamer;
+			productReference = 557277822E2CCC6800871899 /* LensRenamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5572778F2E2CCC6A00871899 /* LensRenamerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557277A72E2CCC6A00871899 /* Build configuration list for PBXNativeTarget "LensRenamerTests" */;
+			buildPhases = (
+				5572778C2E2CCC6A00871899 /* Sources */,
+				5572778D2E2CCC6A00871899 /* Frameworks */,
+				5572778E2E2CCC6A00871899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				557277922E2CCC6A00871899 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				557277932E2CCC6A00871899 /* LensRenamerTests */,
+			);
+			name = LensRenamerTests;
+			packageProductDependencies = (
+			);
+			productName = LensRenamerTests;
+			productReference = 557277902E2CCC6A00871899 /* LensRenamerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		557277992E2CCC6A00871899 /* LensRenamerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557277AA2E2CCC6A00871899 /* Build configuration list for PBXNativeTarget "LensRenamerUITests" */;
+			buildPhases = (
+				557277962E2CCC6A00871899 /* Sources */,
+				557277972E2CCC6A00871899 /* Frameworks */,
+				557277982E2CCC6A00871899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5572779C2E2CCC6A00871899 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5572779D2E2CCC6A00871899 /* LensRenamerUITests */,
+			);
+			name = LensRenamerUITests;
+			packageProductDependencies = (
+			);
+			productName = LensRenamerUITests;
+			productReference = 5572779A2E2CCC6A00871899 /* LensRenamerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5572777A2E2CCC6800871899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					557277812E2CCC6800871899 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					5572778F2E2CCC6A00871899 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 557277812E2CCC6800871899;
+					};
+					557277992E2CCC6A00871899 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 557277812E2CCC6800871899;
+					};
+				};
+			};
+			buildConfigurationList = 5572777D2E2CCC6800871899 /* Build configuration list for PBXProject "LensRenamer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 557277792E2CCC6800871899;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 557277832E2CCC6800871899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557277812E2CCC6800871899 /* LensRenamer */,
+				5572778F2E2CCC6A00871899 /* LensRenamerTests */,
+				557277992E2CCC6A00871899 /* LensRenamerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5572778E2E2CCC6A00871899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557277982E2CCC6A00871899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A520A82E2D47F700FA9619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A5229B2E2D489000FA9619 /* lib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5572777E2E2CCC6800871899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5572778C2E2CCC6A00871899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557277962E2CCC6A00871899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		557277922E2CCC6A00871899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557277812E2CCC6800871899 /* LensRenamer */;
+			targetProxy = 557277912E2CCC6A00871899 /* PBXContainerItemProxy */;
+		};
+		5572779C2E2CCC6A00871899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557277812E2CCC6800871899 /* LensRenamer */;
+			targetProxy = 5572779B2E2CCC6A00871899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		557277A22E2CCC6A00871899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		557277A32E2CCC6A00871899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		557277A52E2CCC6A00871899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LensRenamer/LensRenamer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.LensRenamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		557277A62E2CCC6A00871899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LensRenamer/LensRenamer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.LensRenamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		557277A82E2CCC6A00871899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.LensRenamerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LensRenamer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LensRenamer";
+			};
+			name = Debug;
+		};
+		557277A92E2CCC6A00871899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.LensRenamerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LensRenamer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LensRenamer";
+			};
+			name = Release;
+		};
+		557277AB2E2CCC6A00871899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.LensRenamerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LensRenamer;
+			};
+			name = Debug;
+		};
+		557277AC2E2CCC6A00871899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B2VB6XBSPA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.eliseomartelli.LensRenamerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LensRenamer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5572777D2E2CCC6800871899 /* Build configuration list for PBXProject "LensRenamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557277A22E2CCC6A00871899 /* Debug */,
+				557277A32E2CCC6A00871899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557277A42E2CCC6A00871899 /* Build configuration list for PBXNativeTarget "LensRenamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557277A52E2CCC6A00871899 /* Debug */,
+				557277A62E2CCC6A00871899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557277A72E2CCC6A00871899 /* Build configuration list for PBXNativeTarget "LensRenamerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557277A82E2CCC6A00871899 /* Debug */,
+				557277A92E2CCC6A00871899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557277AA2E2CCC6A00871899 /* Build configuration list for PBXNativeTarget "LensRenamerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557277AB2E2CCC6A00871899 /* Debug */,
+				557277AC2E2CCC6A00871899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5572777A2E2CCC6800871899 /* Project object */;
+}

@@ -1,0 +1,66 @@
+name: Build and Release LensRenamer
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
+
+      - name: Install Apple certificate
+        uses: apple-actions/import-codesign-certs@v2
+        with:
+          p12-file-base64: ${{ secrets.MAC_CERTIFICATE }}
+          p12-password: ${{ secrets.MAC_CERTIFICATE_PASSWORD }}
+
+      - name: Install provisioning profile
+        run: |
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          echo "${{ secrets.MAC_PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
+
+      - name: Bump MARKETING_VERSION and BUILD_NUMBER
+        run: |
+          TAG_VERSION=${GITHUB_REF#refs/tags/}
+          MARKETING_VERSION=$(echo $TAG_VERSION | cut -d. -f1-3)
+          BUILD_NUMBER=$(echo $TAG_VERSION | cut -d. -f3)
+          xcrun agvtool new-marketing-version "$MARKETING_VERSION"
+          xcrun agvtool new-version -all "$BUILD_NUMBER"
+
+      - name: Build app
+        run: |
+          xcodebuild -scheme LensRenamer -configuration Release -derivedDataPath build
+
+      - name: Package app
+        run: |
+          mkdir -p dist
+          APP_PATH=$(find build/Build/Products/Release -name "LensRenamer.app" -type d | head -n 1)
+          ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" "dist/LensRenamer-macos.zip"
+
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/LensRenamer-macos.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push version changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
+          git add LensRenamer.xcodeproj/project.pbxproj
+          git commit -m "chore: bump MARKETING_VERSION and BUILD_NUMBER [skip ci]" || echo "No changes to commit"
+          git push
