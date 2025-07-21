@@ -5,32 +5,22 @@
 //  Created by Eliseo Martelli on 20/07/25.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct LensRenamerApp: App {
-    @State var showUpdateAlert: Bool = false
     @StateObject private var versionViewModel = VersionViewModel()
 
     var body: some Scene {
         WindowGroup {
             ContentViewRoot()
                 .frame(minWidth: 600, minHeight: 400)
-                .onChange(of: versionViewModel.latestVersion) {
-                    checkForUpdate()
-                }
-                .alert(isPresented: $showUpdateAlert, content: updateAlert)
+                .alert(isPresented: $versionViewModel.isUpdateAvailable, content: updateAlert)
         }
         .modelContainer(for: Lens.self)
     }
-    
-    private func checkForUpdate() {
-        if Bundle.main.buildVersion! != versionViewModel.latestVersion {
-            showUpdateAlert = true
-        }
-    }
-    
+
     private let updateAlert: () -> Alert = {
         Alert(
             title: Text("LensRenamer is out of date"),
